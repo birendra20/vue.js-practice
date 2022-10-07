@@ -14,6 +14,19 @@
   <h2 v-bind:class="isSoldout ? 'sold-out' : 'new'">
     conditionally Binding styles(dynamic class eg)
   </h2>
+  <h2 v-bind:class="['new', 'promoted']">newly</h2>
+  <h2 v-bind:class="[isPromoted && 'promoted', isSoldout ? 'sold-out' : 'new']">
+    array conditional movie
+  </h2>
+  <h2
+    v-bind:class="{
+      promoted: isPromoted,
+      new: !isSoldout,
+      'sold-out': isSoldout,
+    }"
+  >
+    object conditional movie
+  </h2>
 </template>
 
 <script>
@@ -30,7 +43,7 @@ export default {
       isDisabled: false,
       status: "danger",
       isPromoted: true,
-      isSoldout: false,
+      isSoldout: true,
     };
   },
 };
