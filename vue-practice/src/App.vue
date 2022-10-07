@@ -2,6 +2,7 @@
   <Greet />
   <ConditinalRendering />
   <ListRendering />
+  <ListAndKey />
 
   <!-- <Misc /> -->
 </template>
@@ -10,6 +11,7 @@
 import Greet from "./components/Greet.vue";
 import ConditinalRendering from "./components/ConditionalRendering.vue";
 import ListRendering from "./components/ListRendering.vue";
+import ListAndKey from "./components/ListAndKey.vue";
 
 // import Misc from "./components/Misc.vue";
 export default {
@@ -18,6 +20,7 @@ export default {
     Greet,
     ConditinalRendering,
     ListRendering,
+    ListAndKey,
     // Misc,
   },
   data() {
