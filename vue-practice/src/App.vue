@@ -8,6 +8,7 @@
   <EventHandling />
 
   <EventHandling2 />
+  <FormHandling />
 
   <!-- <Misc /> -->
 </template>
@@ -21,6 +22,7 @@ import ConditionalListRendering from "./components/ConditionalListRendering.vue"
 import Methods from "./components/Methods.vue";
 import EventHandling from "./components/EventHandling.vue";
 import EventHandling2 from "./components/EventHandling2.vue";
+import FormHandling from "./components/FormHandling.vue";
 
 // import Misc from "./components/Misc.vue";
 export default {
@@ -34,6 +36,7 @@ export default {
     Methods,
     EventHandling,
     EventHandling2,
+    FormHandling,
     // Misc,
   },
   data() {
@@ -47,7 +50,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
 }

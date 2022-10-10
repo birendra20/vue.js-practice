@@ -1,7 +1,9 @@
 <template>
   <div>{{ name }}</div>
   <div>
-    <button @click="changeName">Change name</button>
+    <button @click="changeName($event), increment5(5, $event)">
+      Change name
+    </button>
     <button @click="name = 'batman'">Change name</button>
   </div>
   <h1>{{ count }}</h1>
@@ -12,7 +14,7 @@
     <button @click="decrement">decrement</button>
   </div>
   <div>
-    <button @click="increment5(5)">increment5</button>
+    <button @click="increment5(5, $event)">increment5</button>
     <button @click="decrement5(5)">decrement5</button>
   </div>
   <hr />
@@ -38,8 +40,9 @@ export default {
     decrement() {
       this.count -= 1;
     },
-    increment5(num) {
+    increment5(num, event) {
       this.count += num;
+      console.log("event", event);
     },
     decrement5(num) {
       this.count -= num;
