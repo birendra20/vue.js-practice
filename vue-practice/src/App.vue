@@ -3,6 +3,11 @@
   <ConditinalRendering />
   <ListRendering />
   <ListAndKey />
+  <ConditionalListRendering />
+  <Methods />
+  <EventHandling />
+
+  <EventHandling2 />
 
   <!-- <Misc /> -->
 </template>
@@ -12,6 +17,10 @@ import Greet from "./components/Greet.vue";
 import ConditinalRendering from "./components/ConditionalRendering.vue";
 import ListRendering from "./components/ListRendering.vue";
 import ListAndKey from "./components/ListAndKey.vue";
+import ConditionalListRendering from "./components/ConditionalListRendering.vue";
+import Methods from "./components/Methods.vue";
+import EventHandling from "./components/EventHandling.vue";
+import EventHandling2 from "./components/EventHandling2.vue";
 
 // import Misc from "./components/Misc.vue";
 export default {
@@ -21,6 +30,10 @@ export default {
     ConditinalRendering,
     ListRendering,
     ListAndKey,
+    ConditionalListRendering,
+    Methods,
+    EventHandling,
+    EventHandling2,
     // Misc,
   },
   data() {
